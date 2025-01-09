@@ -26,10 +26,21 @@
                 <input type="text">
             </div>   
          </fieldest>
-         <input type="submit" value="送信" onclick="send()">   
+         <input type="submit" value="送信" onclick="ques()">   
+         
          <script>
-            function send(){
-               alert("できませんでした")
+            function ques(){
+            if(window.confrim("申し込みますか？"))   
+               alert("完了しました")
+               setTimeout(() => {
+                  location.href = "./index.html"
+               }, 3000)
+                 ;
+            }else{
+               send();
+            }
+            fanction send(){
+               alert("できま  せんでした")
             }
          </script>   
  </form>
