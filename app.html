@@ -30,15 +30,16 @@
          
          <script>
             function ques(){
-            if(window.confrim("申し込みますか？")){
-               alert("完了しました")
-               setTimeout(() => {
+               if(window.confrim("申し込みますか？")){
+                  alert("完了しました")
+                  setTimeout(() => {
                   location.href = "./index.html"
                }, 3000)
                  ;
             }else{
                send();
-            }
+             }
+            }  
             function send(){
                alert("できませんでした")
             }
@@ -48,4 +49,4 @@
 
       <p>申し込みはありません実在もしません</p>
    </body>
-   </html>
+</html>
